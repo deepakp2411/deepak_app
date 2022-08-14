@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import List from "./app/components/List";
+import Texts from "./app/components/Texts";
+import { View } from "react-native";
+import Buttond from "./app/components/Buttond";
+import Modals from "./app/components/Modals";
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      {/* <List /> */}
+      {/* <Texts /> */}
+      {/* <Buttond /> */}
+      <Modals />
+    </>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
